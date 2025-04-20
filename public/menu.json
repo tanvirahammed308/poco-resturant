@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Beef Burger",
+    "category": "Burger",
+    "price": 250,
+    "description": "Juicy beef patty with lettuce, tomato, cheese, and our special sauce",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_15-600x600.png",
+    "type": "menu",
+    "todaySpecial": true
+  },
+  {
+    "id": 2,
+    "name": "Chicken Zinger Burger",
+    "category": "Burger",
+    "price": 230,
+    "description": "Crispy fried chicken fillet with spicy mayo and coleslaw",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_21-600x600.png",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "name": "Cheesy Margherita Pizza",
+    "category": "Pizza",
+    "price": 400,
+    "description": "Classic margherita with extra mozzarella and fresh basil",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_9-600x600.png",
+    "type": "menu",
+    "todaySpecial": true
+  },
+  {
+    "id": 4,
+    "name": "Pepperoni Feast Pizza",
+    "category": "Pizza",
+    "price": 450,
+    "description": "Loaded with pepperoni, cheese, and tomato sauce",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_10-600x600.png",
+    "type": "menu"
+  },
+  {
+    "id": 5,
+    "name": "Chocolate Lava Cake",
+    "category": "Dessert",
+    "price": 180,
+    "description": "Warm chocolate cake with molten center, served with ice cream",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-25.jpgdrinks",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 6,
+    "name": "Strawberry Cheesecake",
+    "category": "Dessert",
+    "price": 200,
+    "description": "Rich and creamy cheesecake topped with fresh strawberries",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-23.jpg",
+    "type": "menu"
+  },
+  {
+    "id": 7,
+    "name": "Fresh Lemonade",
+    "category": "Drinks",
+    "price": 60,
+    "description": "Chilled lemonade made with fresh lemons and mint",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-37.jpg",
+    "type": "menu"
+  },
+  {
+    "id": 8,
+    "name": "Cold Coffee",
+    "category": "Drinks",
+    "price": 90,
+    "description": "Iced coffee with a smooth and creamy blend",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-38.jpg",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 9,
+    "name": "Greek Salad",
+    "category": "Salad",
+    "price": 150,
+    "description": "Fresh cucumbers, tomatoes, olives, feta, and vinaigrette",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_14-600x600.png",
+    "type": "menu"
+  },
+  {
+    "id": 10,
+    "name": "Chicken Caesar Salad",
+    "category": "Salad",
+    "price": 180,
+    "description": "Grilled chicken, romaine lettuce, croutons, and Caesar dressing",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_13-600x600.png",
+    "type": "menu",
+    "todaySpecial": true
+  },
+  {
+    "id": 11,
+    "name": "Spicy Chicken Burger",
+    "category": "Burger",
+    "price": 240,
+    "description": "Spicy grilled chicken breast with jalapenos and chipotle mayo",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_7-600x600.png",
+    "type": "menu"
+  },
+  {
+    "id": 12,
+    "name": "BBQ Chicken Pizza",
+    "category": "Pizza",
+    "price": 430,
+    "description": "Grilled chicken, BBQ sauce, onions, and cheese",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_8-600x600.png",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 13,
+    "name": "Vanilla Ice Cream",
+    "category": "Dessert",
+    "price": 120,
+    "description": "Classic vanilla scoop with chocolate syrup",
+    "image": " https://templates.framework-y.com/gourmet/images/gallery/image-21.jpg",
+    "type": "menu"
+  },
+  {
+    "id": 14,
+    "name": "Iced Tea",
+    "category": "Drinks",
+    "price": 70,
+    "description": "Refreshing black tea with lemon and ice",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-39.jpg",
+    "type": "menu",
+    "todaySpecial": true
+  },
+  {
+    "id": 15,
+    "name": "Tuna Salad",
+    "category": "Salad",
+    "price": 160,
+    "description": "Tuna chunks, lettuce, cucumbers, and olives",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-17.jpg",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 16,
+    "name": "Veggie Delight Burger",
+    "category": "Burger",
+    "price": 220,
+    "description": "Grilled veggie patty with lettuce, tomato, and avocado spread",
+    "image": "https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/product_6-600x600.png",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 17,
+    "name": "Tandoori Chicken Pizza",
+    "category": "Pizza",
+    "price": 460,
+    "description": "Tandoori spiced chicken with onions, capsicum, and mozzarella",
+    "image": "https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/19-1.png",
+    "type": "menu",
+    "todaySpecial": true
+  },
+  {
+    "id": 18,
+    "name": "Oreo Sundae",
+    "category": "Dessert",
+    "price": 190,
+    "description": "Vanilla ice cream with crushed Oreos and chocolate drizzle",
+    "image": "https://nutritionrefined.com/wp-content/uploads/2018/07/vegan-vanilla-ice-cream-1.jpg",
+    "type": "menu"
+  },
+  {
+    "id": 19,
+    "name": "Mint Mojito",
+    "category": "Drinks",
+    "price": 80,
+    "description": "Refreshing mint and lemon soda mocktail",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-40.jpg",
+    "type": "menu",
+    "popular": true
+  },
+  {
+    "id": 20,
+    "name": "Avocado Chicken Salad",
+    "category": "Salad",
+    "price": 240,
+    "description": "Grilled chicken, fresh avocado, and greens with lemon dressing",
+    "image": "https://templates.framework-y.com/gourmet/images/gallery/image-3.jpg",
+    "type": "menu",
+    "todaySpecial": true
+  }
+]

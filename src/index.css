@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Quicksand:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+body{
+    .pm-color{
+        color:#00A149
+    }
+    .sc-color{
+        color:#212529
+
+    }
+    .text-pm {
+        font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+      }
+      .text-sc{
+
+        font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+      }
+}
+@layer utilities {
+    .swiper-pagination-bullet {
+      @apply bg-gray-300 opacity-100;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #00A149 !important;
+    }
+  }
