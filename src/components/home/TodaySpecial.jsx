@@ -2,7 +2,7 @@ import React, { useRef, useState, useContext, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation, Autoplay } from 'swiper/modules'; // ✅ Autoplay imported
+import { Navigation, Autoplay } from 'swiper/modules';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { StoreContext } from '../../context/StoreProvider';
 import { IoIosStar } from "react-icons/io";
@@ -20,7 +20,7 @@ const TodaySpecial = () => {
   }, []);
 
   return (
-    <div className="w-10/12 max-w-screen-xl mx-auto px-4 md:px-0 mt-16">
+    <div className="w-full md:w-10/12 max-w-screen-xl mx-auto px-4 mt-16">
       <div className="py-6">
         {/* Header */}
         <div className="relative mb-6">
@@ -47,12 +47,12 @@ const TodaySpecial = () => {
         {navReady && (
           <Swiper
             spaceBetween={15}
-            slidesPerView={1.2}
-            slidesPerGroup={2}
+            slidesPerView={1.1}
+            slidesPerGroup={1}
             loop={filterTodaySpecial.length > 4}
-            modules={[Navigation, Autoplay]} // ✅ Added Autoplay module
+            modules={[Navigation, Autoplay]}
             autoplay={{
-              delay: 3000, // ✅ Delay between slides
+              delay: 3000,
               disableOnInteraction: false,
             }}
             navigation={{
@@ -68,15 +68,17 @@ const TodaySpecial = () => {
               }
             }}
             breakpoints={{
-              640: { slidesPerView: 1.2 },
-              768: { slidesPerView: 2.5 },
-              1024: { slidesPerView: 3.5 },
+              480: { slidesPerView: 1.2 },
+              640: { slidesPerView: 1.5 },
+              768: { slidesPerView: 2.3 },
+              1024: { slidesPerView: 3.2 },
               1280: { slidesPerView: 4 },
             }}
+            className="pb-5"
           >
             {filterTodaySpecial.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg overflow-hidden transition duration-300 flex flex-col border border-gray-300 w-full">
+                <div className="bg-white rounded-xl shadow-md hover:shadow-lg overflow-hidden transition duration-300 flex flex-col border border-gray-200 w-full">
                   <img
                     src={item.image}
                     alt={item.name}

@@ -14,17 +14,17 @@ import { FaYoutube } from "react-icons/fa";
 
 const SubHeader = () => {
   return (
-    <div className='border-t-4 border-[#009d57]'>
+    <div className='border-t-4 border-[#009d57] hidden md:block'>
         <div className=' w-10/12 mx-auto py-3 flex justify-between items-center '>
         {/* left side */}
         <div className='parent md:flex items-center gap-5 hidden'>
-        <div className='flex  items-center gap-4  hover:text-[#FFC222] cursor-pointer'>
+        <div className='flex  items-center gap-4  hover:text-[#009d57] cursor-pointer'>
         <CiLocationOn />
         <p>Find a Store</p>
 
 
         </div>
-        <div className='flex  items-center gap-4 hover:text-[#FFC222] cursor-pointer'>
+        <div className='flex  items-center gap-4 hover:text-[#009d57] cursor-pointer'>
         <CiDeliveryTruck />
 
         <p>Order Tracking</p>
@@ -34,16 +34,16 @@ const SubHeader = () => {
         </div>
         
         {/* center side */}
-        <div>
+        <div >
             <p>100% Secure delivery without contacting the courier</p>
 
         </div>
         {/* right side */}
         <div className='text-sm text-gray-400 md:flex gap-2 hidden'>
-        <FaFacebook  className='hover:text-[#FFC222]'/>
-        <FaSquareXTwitter className='hover:text-[#FFC222]'/>
-        <FaInstagramSquare  className='hover:text-[#FFC222]'/>
-        <FaYoutube  className='hover:text-[#FFC222]'/>
+        <FaFacebook  className='hover:text-[#009d57]'/>
+        <FaSquareXTwitter className='hover:text-[#009d57]'/>
+        <FaInstagramSquare  className='hover:text-[#009d57]'/>
+        <FaYoutube  className='hover:text-[#009d57]'/>
 
 
 

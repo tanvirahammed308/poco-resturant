@@ -1,50 +1,50 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
-import salad from "../../assets/img/card/salad-card.png"
-import burger from "../../assets/img/card/burger-card.png"
+import React, { useContext, useEffect, useRef, useState } from 'react';
+import salad from "../../assets/img/card/salad-card.png";
+import burger from "../../assets/img/card/burger-card.png";
 import { StoreContext } from '../../context/StoreProvider';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules'; // ✅ Autoplay imported
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
 import { IoIosStar } from "react-icons/io";
 
 const Popular = () => {
-    const { foodMenu } = useContext(StoreContext);
-      const filterPopular = foodMenu.filter((item) => item.popular);
-    
-      const prevRef = useRef(null);
-      const nextRef = useRef(null);
-      const [navReady, setNavReady] = useState(false);
-    
-      useEffect(() => {
-        setNavReady(true);
-      }, []);
-  return (
-    <div className='w-10/12 mx-auto '>
-        {/* card */}
-        <div className='block md:flex justify-between items-center  space-y-4 md:space-y-0 gap-10'>
-            <div className='bg-[#06202B] py-2 px-3 rounded flex items-center  space-y-2 w-full md:w-1/2 justify-evenly'>
-<img src={salad} alt="" className='w-32'/>
-<div className='space-y-2 text-white'>
-    <h1 className='text-2xl font-bold'>Garden Glory Salad</h1>
-    <p> "Fresh-picked flavors in every bite."</p>
-    <button className='bg-[#00A149] py-1 px-3 text-white font-bold rounded'>Order Now</button>
-</div>
-            </div>
-            <div className='bg-[#1DCD9F] py-2 px-3 rounded flex items-center  space-y-2 w-full md:w-1/2 justify-evenly'>
-<img src={burger} alt="" className='w-32'/>
-<div className='space-y-2 text-white'>
-    <h1 className='text-2xl font-bold'>Spice Stack</h1>
-    <p> "A tangy twist in every bite"</p>
-    <button className='bg-[#00A149] py-1 px-3 text-white font-bold rounded'>Order Now</button>
-</div>
-            </div>
-        </div>
+  const { foodMenu } = useContext(StoreContext);
+  const filterPopular = foodMenu.filter((item) => item.popular);
 
-        {/* popular products */}
-        <div className="py-6">
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const [navReady, setNavReady] = useState(false);
+
+  useEffect(() => {
+    setNavReady(true);
+  }, []);
+
+  return (
+    <div className="w-10/12 mx-auto">
+      {/* card */}
+      <div className="block md:flex justify-between items-center space-y-4 md:space-y-0 gap-10">
+        <div className="bg-[#06202B] py-2 px-3 rounded flex flex-col md:flex-row justify-center items-center space-y-2 w-full md:w-1/2 md:justify-evenly">
+          <img src={salad} alt="" className="w-32" />
+          <div className="space-y-2 text-white text-center md:text-justify">
+            <h1 className="text-2xl font-bold">Garden Glory Salad</h1>
+            <p>"Fresh-picked flavors in every bite."</p>
+            <button className="bg-[#00A149] py-1 px-3 text-white font-bold rounded">Order Now</button>
+          </div>
+        </div>
+        <div className="bg-[#1DCD9F] py-2 px-3 rounded flex flex-col justify-center md:flex-row items-center space-y-2 w-full md:w-1/2 md:justify-evenly">
+          <img src={burger} alt="" className="w-32" />
+          <div className="space-y-2 text-white text-center md:text-justify">
+            <h1 className="text-2xl font-bold">Spice Stack</h1>
+            <p>"A tangy twist in every bite"</p>
+            <button className="bg-[#00A149] py-1 px-3 text-white font-bold rounded">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      {/* popular products */}
+      <div className="py-6">
         {/* Header */}
         <div className="relative mb-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-4 bg-white z-10 relative gap-3">
@@ -70,8 +70,8 @@ const Popular = () => {
         {navReady && (
           <Swiper
             spaceBetween={15}
-            slidesPerView={1.2}
-            slidesPerGroup={2}
+            slidesPerView={1.2} // Adjust for mobile
+            slidesPerGroup={1}
             loop={filterPopular.length > 4}
             modules={[Navigation, Autoplay]} // ✅ Added Autoplay module
             autoplay={{
@@ -91,8 +91,9 @@ const Popular = () => {
               }
             }}
             breakpoints={{
-              640: { slidesPerView: 1.2 },
-              768: { slidesPerView: 2.5 },
+              480: { slidesPerView: 1.2 }, // For smaller screens, show 1.2 slides
+              640: { slidesPerView: 1.5 },
+              768: { slidesPerView: 2.5 }, // 2.5 for medium screens
               1024: { slidesPerView: 3.5 },
               1280: { slidesPerView: 4 },
             }}
@@ -125,9 +126,8 @@ const Popular = () => {
           </Swiper>
         )}
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Popular
+export default Popular;

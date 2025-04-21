@@ -128,12 +128,12 @@ const Hero = () => {
     <div className="w-full md:w-1/4  flex flex-col gap-5 mt-5 md:mt-0">
       {
         data.map((item)=><div className="card px-2 " style={{backgroundColor:item.bg}}>
-          <div className="flex items-center md:gap-2 gap-20 ">
+          <div className="flex flex-col md:flex-row justify-center items-center md:gap-2 md:pb-0 pb-4 ">
           <div>
 <img src={item.image} alt="item.name" className="w-32 md:w-20 h-38 bg-cover object-contain"/>
           </div>
 
-          <div className="gap-2">
+          <div className="gap-2 text-center">
             <p className="text-sm text-[#009D57] font-semibold">{item.offerTitle}</p>
             <h1 className="font-bold text-gray-700">{item.name}</h1>
            
