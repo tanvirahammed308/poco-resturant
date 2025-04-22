@@ -76,11 +76,12 @@ const Footer = () => {
                   <h2 className=" text-xl font-bold mb-2 ">Category</h2>
                   <div className="border-b border-gray-200 mb-3" />
                   <ul className="space-y-3 text-sm ">
-                    <li><Link to="#" >Dairy & Milk</Link></li>
-                    <li><Link to="#">Fruit & Veg</Link></li>
-                    <li><Link to="#">Butcher</Link></li>
+                    <li><Link to="/menu" >Burger</Link></li>
+                    <li><Link to="/menu">Pizza</Link></li>
+                    <li><Link to="/menu">Dessert</Link></li>
                    
-                    <li><Link to="#">Bakery</Link></li>
+                    <li><Link to="/menu">Drinks</Link></li>
+                    <li><Link to="/menu">Salad</Link></li>
                    
                   </ul>
                 </div>
