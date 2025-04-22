@@ -70,7 +70,7 @@ const Footer = () => {
              
       
               {/* Footer Links */}
-              <div className="w-full flex flex-col md:flex-row  md:justify-between gap-6 py-20 text-white">
+              <div className="w-full flex flex-col md:flex-row  md:justify-between gap-6 py-2 text-white">
                 {/* Category */}
                 <div className="w-full md:w-32 ">
                   <h2 className=" text-xl font-bold mb-2 ">Category</h2>
@@ -130,7 +130,7 @@ const Footer = () => {
                 </div>
               </div>
         {/* footer bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-8">
           {/* icons */}
           <div className="flex gap-5">
             <div className="bg-white rounded-full  p-2 hover:bg-[#009d57] hover:text-white flex justify-center items-center w-10 h-10 transition-colors duration-300">
